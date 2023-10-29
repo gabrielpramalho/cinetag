@@ -1,4 +1,7 @@
 .container section{
-    margin: 2em 20em;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
     text-align: center;
 }
