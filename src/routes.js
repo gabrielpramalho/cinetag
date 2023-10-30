@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Container from "components/Container"
 import FavoritosProvider from "contextos/Favoritos"
 import Player from "pages/Player"
+import NotFound from "pages/NotFound"
 
 const AppRoutes = () =>{
     return(
@@ -17,6 +18,7 @@ const AppRoutes = () =>{
                         <Route path="/" element={<Inicio />}/>
                         <Route path="/favoritos" element={<Favoritos />}/>
                         <Route path="/:id" element={<Player />}/>
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </FavoritosProvider>
             </Container>
